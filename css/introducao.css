@@ -1,0 +1,37 @@
+
+.introducao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px;
+}
+
+.introducao img{
+    height: 100%;
+    width: 75%;
+    margin-left: 70px ;
+}
+
+.introducao-conteudo{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 250px;
+    width: 45%;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 70px;
+}
+
+.botao{
+    display: inline-block;
+    padding: 16px 32px;
+    background: var(--roxo-escuro);
+    text-align: center;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: white;
+}

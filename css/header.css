@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #f9f9f9;
+    text-shadow: 1px 0 20px #091d05;
+    background: var(--roxo-claro);
+    font-size: 20px;
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}

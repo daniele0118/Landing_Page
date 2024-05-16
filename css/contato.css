@@ -1,0 +1,21 @@
+.contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px;
+    gap: 50px;
+}
+
+.contato-conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px;
+    gap: 50px;
+}
+
+.contato-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

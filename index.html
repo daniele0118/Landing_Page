@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Meu Portfólio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header-bg">
+        <div class="header container">
+            <h1>Landing Page</h1>
+            <nav aria-label="primaria">
+                <ul class="header-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="introducao-bg">
+        <div class="introducao container">
+                <div class="introducao-conteudo">
+                    <article><h3>Boas vindas a minha landing page!</h3>
+                    <h1><strong>Desenvolvedora Fullstack Júnior</strong></h1>
+                    <p>Java, HTML, CSS, JavaScript, Typescript, React, Nest.js e MySQL.</p>
+                    </article>
+                        <div class="button">
+                            <a class="botao" href="https://i.pinimg.com/736x/49/e5/08/49e508a4ba6bc9be11a200f0e6496967.jpg"><strong>Explore</strong></a>
+                        </div>
+                </div>
+            <img src="assets/astronauta.svg" alt="Capacete de astronauta">
+            </main>
+            <section class="sobre container">
+                <div class="about-img">
+                    <img src="assets/Sk5SjWE.jpeg" alt="Foto padrao" width="200" height="200">
+                </div>
+            <div class="sobre-conteudo">
+                <div class="texto">
+                    <h1>Quem sou eu?</h1>
+                    <p>
+                        Graduada em Engenharia de Computação, possuo conhecimento em linguagens de programação, Banco de Dados e redes de computadores. Sou persistente e responsável, sempre cuidadosa com minhas tarefas e comprometida em entregá-las de forma eficiente. Estou atualmente em busca de oportunidades para expandir meu conhecimento em tecnologia e aplicar minhas habilidades.
+                    </p>
+                </div>
+                    <div class="github-info">
+                        <div class="button">
+                            <a class="botao" href="https://github.com/daniele0118"><strong>Github</strong></a>
+                        </div>
+                        <h2>Seguidores</h2>
+                        <h2>Repositórios</h2>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="contato container">
+        <div class="contato-counteudo">
+            <h1>Me contate</h1>
+            <p>Conecte-se comigo nas minhas redes sociais!
+                Vou adorar conversar com você 🤠
+            </p>
+            <div class="contato-link">
+                <a href="https://github.com/daniele0118"><img src="./assets/github.svg" alt="Github">
+                </a>
+                <a href="https://www.instagram.com/"><img src="./assets/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/daniele-campos-ferreira/"><img src="./assets/linkedin.svg" alt="Linkedin"></a>
+            </div>
+        </div>
+        <div class="form">
+            <form class="formularios">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" onkey="validaForm()"required>
+                <div id="nome_label"></div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" onkey="validaForm()"required>
+                <div id="assunto_label"></div>
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" onkey="validaForm()"required>
+                <div id="assunto_label"></div>     
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="3" name="mensagem" required>
+                </textarea> 
+                <button type="submit">Enviar</button>      
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Feito por Dani🧐 - 2024</p>
+    </footer>
 </body>
 </html>
