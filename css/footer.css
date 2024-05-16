@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+    font-family: "Krona One", sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}

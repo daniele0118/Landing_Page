@@ -16,3 +16,14 @@ body {
 .container{
     padding: 150px;
 }
+
+
+button{
+    display: inline-block;
+    padding: 16px 32px;
+    background: var(--roxo-escuro);
+    text-align: center;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: white;
+}

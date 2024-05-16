@@ -1,24 +1,19 @@
-let elemento_titulo = document.getElementById("titulo")
-console.log(elemento_titulo)
+const username = "daniele0118";
+const followers = document.getElementById('seguidores');
+const publicRepos = document.querySelector('#repositorios');
+const foto = document.getElementById('foto');
 
-let elemento_class = document.getElementsByClassName("imagem")
-console.log(elemento_class)
-
-let conteudo_titulo = elemento_titulo.innerHTML;
-console.log(conteudo_titulo);
-
-elemento_titulo.style.color = "blue"
-
-let elemento_image = document.getElementById("imagem")
-
-elemento_image.setAttribute('src', 'https://img.')
-
-//Definindo manipuladores de eventos
-
-let input_change = document.querySelector('#input_change')
-const botao_click = document.querySelector('#botao_clique')
-const botao_over = document.querySelector('#botao_over')
-
-function upperCase(){
-    let upperCase = input_change.value.upperCase()
+async function getApiGitHub(){
+    try{
+        const dadosPerfil = await fetch(`https://api.github.com/users/${username}`);
+        const perfil = await dadosPerfil.json();
+        followers.innerHTML = `seguidores ${perfil.followers}`;
+        publicRepos.innerHTML = `repositorios ${perfil.public_repos}`;
+        foto.src = `${perfil.avatar_url}`;
+    }catch(error){
+        console.log(error);
+    }
 }
+
+getApiGitHub();
+

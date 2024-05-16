@@ -8,8 +8,9 @@
     padding: 100px;
 }
 
-.about-img{
+#foto{
     padding: 150px;
+    border-radius: 50%;
 }
 
 .texto{
